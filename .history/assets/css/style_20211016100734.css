@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+}
+
+/* Common */
+
+.font-size {
+  font-size: 15px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.col-third {
+  width: 33.33333%;
+}
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.margin-top8 {
+  margin-top: 8px !important;
+}
+
+.margin-bottom16 {
+  margin-bottom: 16px !important;
+}
+/* Main */
+#header {
+  background-color: rgb(17, 16, 16);
+  height: 46px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+#nav li > a {
+  color: #fff;
+}
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: large;
+  display: block;
+  line-height: 46px;
+  padding: 0px 24px;
+  position: relative;
+}
+
+#nav li:hover > a {
+  background-color: #ccc;
+  color: #333;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav {
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#nav .subnav a {
+  color: #333;
+  padding: 0 12px;
+  line-height: 38px;
+  min-width: 160px;
+}
+
+#nav .search-nav i {
+  color: #fff;
+  font-size: 16px;
+}
+
+#nav .search-icon {
+  display: inline-block;
+  float: right;
+  padding: 18px 24px;
+}
+
+/* SLIDER */
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("../img/Slider/slider\ 1.jpg") no-repeat center center / cover;
+  width: 100%;
+  position: relative;
+}
+.text-content {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 47px;
+  color: #ccc;
+  text-align: center;
+}
+.text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+.text-description {
+  margin-top: 25px;
+  font-size: 15px;
+}
+/* content */
+
+#content .content-section {
+  width: 800px;
+  margin: 0 auto;
+  padding: 64px 0 64px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+#content .section-heading,
+#content .section-sub-heading {
+  text-align: center;
+}
+
+#content .section-heading {
+  font-size: 30px;
+  letter-spacing: 1mm;
+}
+
+#content .section-sub-heading {
+  margin: 25px auto;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+#content .member-list {
+  margin-top: 47px;
+}
+#content .member-items {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#content .member-img {
+  width: 154px;
+  border-radius: 4px;
+}
+/* Tour section */
+.tour-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.tickets-list li {
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  padding: 8px 16px;
+}
+
+.tickets-list .sold-out {
+  background-color: #f44336;
+  color: white;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+
+.tickets-list .quantity {
+  float: right;
+  font: #333;
+  width: 22px;
+  margin-right: 16px;
+  background-color: black;
+  color: #fff;
+  border-radius: 50% 50%;
+  text-align: center;
+}
+.places-list {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+.places-img {
+  width: 100%;
+  /* Cho kich thuoc anh = kich thuoc the cha chua no */
+  display: block;
+}
+
+.places-items .places-img:hover {
+  opacity: 0.6;
+}
+.places-body {
+  padding-top: 15px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.places-heading {
+  font-weight: bold;
+}
+.places-times {
+  margin-top: 15px;
+  opacity: 0.6;
+}
+.places-description {
+  margin: 15px 0;
+}
+.places-buy-button {
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  padding: 11px 16px;
+  display: inline-block;
+  border-radius: 2px;
+}
+.places-buy-button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* CONTACT */
+.contact-content {
+  margin-top: 47px;
+}
+
+.contact-text {
+  display: inline-block;
+}
+
+.contact-block {
+  font-size: 18px;
+}
+
+.contact-info i[class*="fa"] {
+  width: 30px;
+  display: inline-block;
+}
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form .form-submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: solid;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-size: 15px;
+  float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border-color: #ccc;
+  cursor: pointer;
+}
+
+/* end content */
+.map-section img {
+  width: 100%;
+}
+
+/* footer */
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .social-list {
+  font-size: 22px;
+  color: black;
+  margin: 28px 0px;
+  position: relative;
+}
+
+#footer .social-list a {
+  color: #757575;
+}
+
+#footer .icon-social {
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  transform: TranslateX(-50%) TranslateY(-50%);
+}
+#footer .copyright {
+  font-size: 15px;
+  color: #757575;
+  margin-top: 19px;
+}
